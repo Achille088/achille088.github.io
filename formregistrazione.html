@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo di Registrazione</title>
+</head>
+<body>
+
+    <h2>Modulo di Registrazione</h2>
+
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" required>
+        <br>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+
+        <label for="data_nascita">Data di Nascita:</label>
+        <input type="date" id="data_nascita" name="data_nascita" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <label for="regione">Regione:</label>
+        <select id="regione" name="regione" required>
+            <option value="">Seleziona una regione</option>
+            <option value="Lazio">Lazio</option>
+            <option value="Lombardia">Lombardia</option>
+            <option value="Campania">Campania</option>
+        </select>
+        <br>
+
+        <label>Genere:</label>
+        <input type="radio" id="maschio" name="genere" value="Maschio" required>
+        <label for="maschio">Maschio</label>
+        <input type="radio" id="femmina" name="genere" value="Femmina">
+        <label for="femmina">Femmina</label>
+        <br>
+
+        <input type="checkbox" id="privacy" name="privacy" required>
+        <label for="privacy">Acconsento alla privacy</label>
+        <br>
+
+        <label for="note">Note:</label>
+        <br>
+        <textarea id="note" name="note" rows="4" cols="50"></textarea>
+        <br>
+
+        <label for="cv">Invia CV:</label>
+        <input type="file" id="cv" name="cv">
+        <br>
+
+        <button type="submit">Invia</button>
+
+    </form>
+
+</body>
+</html>
+
+
