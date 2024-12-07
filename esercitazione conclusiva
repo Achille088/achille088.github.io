@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descrizione Automobilistica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin: 5px 0;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Automobile: Modello XYZ</h1>
+    <img src="auto.jpg" alt="Immagine dell'automobile" style="max-width: 100%; height: auto;">
+
+    <h2>Prezzi per modello e tipologia di alimentazione</h2>
+    <table>
+        <tr>
+            <th>Modello</th>
+            <th>Tipo di alimentazione</th>
+            <th>Prezzo</th>
+        </tr>
+        <tr>
+            <td>Modello Base</td>
+            <td>Benzina</td>
+            <td>€20,000</td>
+        </tr>
+        <tr>
+            <td>Modello Sport</td>
+            <td>Diesel</td>
+            <td>€25,000</td>
+        </tr>
+        <tr>
+            <td>Modello Luxury</td>
+            <td>Elettrico</td>
+            <td>€30,000</td>
+        </tr>
+    </table>
+
+    <h2>Optional disponibili</h2>
+    <ul>
+        <li>Rivestimenti in pelle</li>
+        <li>Sistema di navigazione avanzato</li>
+        <li>Telecamera posteriore</li>
+        <li>Bluetooth</li>
+        <li>Monitoraggio della pressione dei pneumatici</li>
+    </ul>
+
+    <h2>Punti di forza del modello scelto</h2>
+    <p>Il modello XYZ è una scelta ideale per chi cerca un'auto elegante, ma allo stesso tempo economica e adatta a tutte le esigenze quotidiane. Il motore potente e i consumi ridotti lo rendono perfetto per viaggi lunghi, mentre l'ampio spazio interno assicura il massimo comfort. Inoltre, grazie alle sue tecnologie innovative, è tra le auto più sicure della sua categoria.</p>
+
+    <h2>Visita il nostro sito per maggiori informazioni</h2>
+    <p><a href="https://www.concessionaria-xyz.com" target="_blank">Visita la concessionaria ufficiale XYZ</a></p>
+
+    <h2>Modulo di contatto</h2>
+    <form action="/submit" method="POST">
+        <label for="dealer-name">Nome della concessionaria visitata:</label>
+        <input type="text" id="dealer-name" name="dealer-name" required><br><br>
+
+        <label for="data-consent">
+            <input type="checkbox" id="data-consent" name="data-consent" required>
+            Acconsento al trattamento dei dati personali
+        </label><br><br>
+
+        <label for="model-selection">Modello di interesse:</label>
+        <select id="model-selection" name="model-selection" multiple required>
+            <option value="base">Modello Base</option>
+            <option value="sport">Modello Sport</option>
+            <option value="luxury">Modello Luxury</option>
+        </select><br><br>
+
+        <button type="submit">Invia</button>
+    </form>
+</body>
+</html>
