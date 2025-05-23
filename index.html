@@ -6,16 +6,30 @@
   <title>I miei progetti GitHub</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      color: #333;
     }
 
-    h1,h2 {
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 40px 20px;
       text-align: center;
-      margin-bottom: 30px;
-      color: #222;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 1.2rem;
     }
 
     .container {
@@ -23,57 +37,75 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .box {
-      width: 250px;
+      width: 260px;
       background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
       text-align: center;
     }
 
     .box:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
     }
 
     .box a {
       display: block;
       color: #007bff;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 1.1rem;
+      font-weight: 600;
     }
 
     .box a:hover {
+      color: #0056b3;
       text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      color: #666;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
- <h1>sito di Russo Achille</h1>
- <h2>ad uso didattico</h2>
-  
+  <header>
+    <h1>Sito di Russo Achille</h1>
+    <h2>Ad uso didattico</h2>
+  </header>
 
   <div class="container">
-    <div class="box"><a href="intestazioni.html" target="_blank">intestazioni</a></div>
-    <div class="box"><a href="paragrafi.html" target="_blank">paragrafi</a></div>
-    <div class="box"><a href= "provetesto.html" target="_blank">prove testo</a></div>
-    <div class="box"><a href="lista.html" target="_blank">lista</a></div>
-    <div class="box"><a href="tabella.html"target="_blank">tabella</a></div>
-    <div class="box"><a href="immaginecentrata.html"target="_blank">immagine centrata</a></div>
-    <div class="box"><a href="esercitazioneconclusiva.html" target="_blank">esercitazione conclusiva</a></div>
-    <div class="box"><a href="formregistrazione.html" target="_blank">form registrazione</a></div>
-    <div class="box"><a href="tabellasfondogrigio.html" target="_blank">tabella sfondo grigio</a></div>
-    <div class="box"><a href="boxflottanti.html" target="_blank">box flottanti</a></div>
-    <div class="box"><a href="lframe.html" target="_blank">lframe</a></div>
-    <div class="box"><a href="ricetta.html" target="_blank">ricetta</a></div>
-    <div class="box"><a href="dropdownmenù.html" target="_blank">drop down menù</a></div>
-    <div class="box"><a href="modellobootstrap.html" target="_blank">modello bootstrap</a></div>
+    <div class="box"><a href="intestazioni.html" target="_blank">Intestazioni</a></div>
+    <div class="box"><a href="paragrafi.html" target="_blank">Paragrafi</a></div>
+    <div class="box"><a href="provetesto.html" target="_blank">Prove Testo</a></div>
+    <div class="box"><a href="lista.html" target="_blank">Lista</a></div>
+    <div class="box"><a href="tabella.html" target="_blank">Tabella</a></div>
+    <div class="box"><a href="immaginecentrata.html" target="_blank">Immagine Centrata</a></div>
+    <div class="box"><a href="esercitazioneconclusiva.html" target="_blank">Esercitazione Conclusiva</a></div>
+    <div class="box"><a href="formregistrazione.html" target="_blank">Form Registrazione</a></div>
+    <div class="box"><a href="tabellasfondogrigio.html" target="_blank">Tabella Sfondo Grigio</a></div>
+    <div class="box"><a href="boxflottanti.html" target="_blank">Box Flottanti</a></div>
+    <div class="box"><a href="lframe.html" target="_blank">Lframe</a></div>
+    <div class="box"><a href="ricetta.html" target="_blank">Ricetta</a></div>
+    <div class="box"><a href="dropdownmenù.html" target="_blank">Drop Down Menù</a></div>
+    <div class="box"><a href="modellobootstrap.html" target="_blank">Modello Bootstrap</a></div>
   </div>
+
+ 
 
 </body>
 </html>
+
 
