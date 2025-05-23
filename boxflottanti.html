@@ -1,46 +1,104 @@
 <!DOCTYPE html>
-  <head>
-    <style>
-      #testa {
-        background-color: yellow;
-        height: 200px;
-      }
-      #piede {
-        height: 200px;
-        background-color: purple;
-        clear: both;
-      }
-      #c1 {
-        float: left;
-        height: 500px;
-        background-color: green;
-        width: 15%;
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portale</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #d62828;
+      margin-top: 20px;
+      font-size: 2.5em;
+    }
+
+    hr {
+      margin: 10px auto 20px;
+      width: 80%;
+      border: none;
+      border-top: 2px solid #ccc;
+    }
+
+    #testa {
+      background-color: #ffdd57;
+      height: 200px;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+    }
+
+    #c1, #c2, #c3 {
+      height: 500px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    #c1:hover, #c2:hover, #c3:hover {
+      transform: scale(1.01);
+    }
+
+    #c1 {
+      width: 15%;
+      background-color: #80ed99;
+    }
+
+    #c2 {
+      width: 70%;
+      background-color: #a0c4ff;
+    }
+
+    #c3 {
+      width: 15%;
+      background-color: #ffadad;
+    }
+
+    #piede {
+      clear: both;
+      background-color: #9d4edd;
+      height: 200px;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
       }
 
-      #c2 {
-        background-color: blue;
-        height: 500px;
-        float: left;
-        width: 70%;
+      #c1, #c2, #c3 {
+        width: 100%;
+        margin-bottom: 10px;
       }
+    }
+  </style>
+</head>
+<body>
 
-      #c3 {
-        float: right;
-        height: 500px;
-        background-color: red;
-        width: 15%;
-        
-   
-      }
-    </style>
-  </head>
-  <body>
-    <h1 align="center"><font color="red"> Portale </font></h1>
-    <hr>
-    <div id="testa"></div>
+  <h1>Portale</h1>
+  <hr>
+
+  <div id="testa"></div>
+
+  <div class="container">
     <div id="c1"></div>
     <div id="c2"></div>
     <div id="c3"></div>
-    <div id="piede"></div>
-  </body>
+  </div>
+
+  <div id="piede"></div>
+
+</body>
 </html>
