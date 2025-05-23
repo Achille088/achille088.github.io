@@ -1,75 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabella 10x10 </title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        .odd {
-            background-color: #d3d3d3;
-        }
-        td:hover {
-            background-color: red;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabella 10x10</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 1000px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    td {
+      border: 1px solid #ccc;
+      padding: 15px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .odd td {
+      background-color: #f9f9f9;
+    }
+
+    td:hover {
+      background-color: #ffcccc;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      td {
+        padding: 8px;
+        font-size: 12px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <table>
-        <tbody>
-            <tr class="odd">
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> 
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td>
-            </tr>
-            <tr>
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> 
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td>
-            </tr>
-            <tr class="odd">
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> 
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td>
-            </tr>
-            <tr>
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> 
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td>
-            </tr>
-            <tr class="odd">
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> 
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td>
-            </tr>
-            <tr>
-                <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem </td> <td>Lorem </td> 
-                <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem </td> <td>Lorem </td>
-            </tr>
-            <tr class="odd">
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> 
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem ipsum</td> <td>Lorem ipsum</td>
-            </tr>
-            <tr>
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> 
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td>
-            </tr>
-            <tr class="odd">
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> 
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td>
-            </tr>
-            <tr>
-                <td>Lorem </td> <td>Lorem</td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> 
-                <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td> <td>Lorem </td>
-            </tr>
-        </tbody>
-    </table>
+  <table>
+    <tbody>
+      <tr class="odd">
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+      </tr>
+      <tr class="odd">
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+      </tr>
+      <tr class="odd">
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem</td> <td>Lorem</td>
+        <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td> <td>Lorem</td> <td>Lorem</td>
+      </tr>
+      <tr class="odd">
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem ipsum</td> <td>Lorem ipsum</td>
+      </tr>
+      <tr>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+      </tr>
+      <tr class="odd">
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+        <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td> <td>Lorem</td>
+      </tr>
+    </tbody>
+  </table>
 
 </body>
 </html>
-
