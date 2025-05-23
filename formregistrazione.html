@@ -1,70 +1,135 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modulo di Registrazione</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modulo di Registrazione</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    input[type="password"],
+    input[type="file"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+      margin-top: 10px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1f6391;
+    }
+  </style>
 </head>
 <body>
 
+  <form action="/submit" method="POST" enctype="multipart/form-data">
     <h2>Modulo di Registrazione</h2>
 
-    <form action="/submit" method="POST" enctype="multipart/form-data">
+    <label for="cognome">Cognome:</label>
+    <input type="text" id="cognome" name="cognome" required>
 
-        <label for="cognome">Cognome:</label>
-        <input type="text" id="cognome" name="cognome" required>
-        <br>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
 
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        <br>
+    <label for="data_nascita">Data di Nascita:</label>
+    <input type="date" id="data_nascita" name="data_nascita" required>
 
-        <label for="data_nascita">Data di Nascita:</label>
-        <input type="date" id="data_nascita" name="data_nascita" required>
-        <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
+    <label for="regione">Regione:</label>
+    <select id="regione" name="regione" required>
+      <option value="">Seleziona una regione</option>
+      <option value="Lazio">Lazio</option>
+      <option value="Lombardia">Lombardia</option>
+      <option value="Campania">Campania</option>
+    </select>
 
-        <label for="regione">Regione:</label>
-        <select id="regione" name="regione" required>
-            <option value="">Seleziona una regione</option>
-            <option value="Lazio">Lazio</option>
-            <option value="Lombardia">Lombardia</option>
-            <option value="Campania">Campania</option>
-        </select>
-        <br>
+    <label>Genere:</label>
+    <div class="radio-group">
+      <input type="radio" id="maschio" name="genere" value="Maschio" required>
+      <label for="maschio" style="display:inline;">Maschio</label>
+      <input type="radio" id="femmina" name="genere" value="Femmina">
+      <label for="femmina" style="display:inline;">Femmina</label>
+    </div>
 
-        <label>Genere:</label>
-        <input type="radio" id="maschio" name="genere" value="Maschio" required>
-        <label for="maschio">Maschio</label>
-        <input type="radio" id="femmina" name="genere" value="Femmina">
-        <label for="femmina">Femmina</label>
-        <br>
+    <div class="checkbox-group">
+      <input type="checkbox" id="privacy" name="privacy" required>
+      <label for="privacy" style="display:inline;">Acconsento alla privacy</label>
+    </div>
 
-        <input type="checkbox" id="privacy" name="privacy" required>
-        <label for="privacy">Acconsento alla privacy</label>
-        <br>
+    <label for="note">Note:</label>
+    <textarea id="note" name="note" rows="4"></textarea>
 
-        <label for="note">Note:</label>
-        <br>
-        <textarea id="note" name="note" rows="4" cols="50"></textarea>
-        <br>
+    <label for="cv">Invia CV:</label>
+    <input type="file" id="cv" name="cv">
 
-        <label for="cv">Invia CV:</label>
-        <input type="file" id="cv" name="cv">
-        <br>
-
-        <button type="submit">Invia</button>
-
-    </form>
+    <button type="submit">Invia</button>
+  </form>
 
 </body>
 </html>
-
-
