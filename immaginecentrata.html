@@ -4,27 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Immagine Centrata</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 40px auto;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        ol {
+            list-style-type: upper-alpha;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 17px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+    </style>
 </head>
 <body>
 
-    <center>
-        <img src="https://raw.githubusercontent.com/Achille088/achille088.github.io/refs/heads/main/img/casa.jpg" alt="casa">
-    </center>
+    <div class="image-container">
+        <img src="https://raw.githubusercontent.com/Achille088/achille088.github.io/refs/heads/main/img/casa.jpg" alt="Casa">
+    </div>
 
-    <p><i>testo in corsivo</i></p>
+    <p><i>Testo in corsivo</i></p>
 
-    <p><sup>apice</sup> e <sub>pedice</sub></p>
+    <p><sup>Apice</sup> e <sub>Pedice</sub></p>
 
-    <ul type="square">
-        <li>primo punto</li>
-        <li>secondo punto</li>
-        <li>terzo punto</li>
+    <ul>
+        <li>Primo punto</li>
+        <li>Secondo punto</li>
+        <li>Terzo punto</li>
     </ul>
 
-    <ol type="A" start="4">
-        <li>quarto punto</li>
-        <li>quinto punto</li>
-        <li>sesto punto</li>
+    <ol start="4">
+        <li>Quarto punto</li>
+        <li>Quinto punto</li>
+        <li>Sesto punto</li>
     </ol>
 
 </body>
