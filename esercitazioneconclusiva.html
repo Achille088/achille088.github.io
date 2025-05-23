@@ -4,16 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferrari - Automobili</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #cc0000;
+        }
+
+        h2 {
+            color: #b30000;
+            margin-top: 40px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 200px;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        th {
+            background-color: #cc0000;
+            color: white;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        a {
+            color: #cc0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #a80000;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Ferrari - Modelli e Prezzi</h1>
 
-    <img src="https://www.addlance.com/blog/wp-content/uploads/2024/04/Logo-Ferrari.jpeg" alt="Logo Ferrari" width="200">
+    <img src="https://www.addlance.com/blog/wp-content/uploads/2024/04/Logo-Ferrari.jpeg" alt="Logo Ferrari">
 
     <h2>Modelli Ferrari</h2>
-
-    <table border="1">
+    <table>
         <tr>
             <th>Modello</th>
             <th>Tipo di Alimentazione</th>
@@ -21,18 +125,18 @@
         </tr>
         <tr>
             <td>Ferrari 488 GTB</td>
-            <td>Benzoina</td>
-            <td>250,000</td>
+            <td>Benzina</td>
+            <td>250.000</td>
         </tr>
         <tr>
             <td>Ferrari Roma</td>
-            <td>Benzoina</td>
-            <td>220,000</td>
+            <td>Benzina</td>
+            <td>220.000</td>
         </tr>
         <tr>
             <td>Ferrari SF90 Stradale</td>
             <td>Ibrida</td>
-            <td>450,000</td>
+            <td>450.000</td>
         </tr>
     </table>
 
@@ -47,7 +151,9 @@
 
     <h2>Punti di forza del modello Ferrari SF90 Stradale</h2>
     <p>
-        La Ferrari SF90 Stradale è un'auto sportiva ibrida che unisce potenza e tecnologia in un design rivoluzionario. Con oltre 1000 CV, è capace di accelerare da 0 a 100 km/h in meno di 2,5 secondi. Questo modello offre prestazioni eccezionali, ma anche una guida straordinariamente confortevole grazie ai suoi sistemi di assistenza avanzati.
+        La Ferrari SF90 Stradale è un'auto sportiva ibrida che unisce potenza e tecnologia in un design rivoluzionario.
+        Con oltre 1000 CV, è capace di accelerare da 0 a 100 km/h in meno di 2,5 secondi. Questo modello offre prestazioni eccezionali,
+        ma anche una guida straordinariamente confortevole grazie ai suoi sistemi di assistenza avanzati.
     </p>
 
     <h2>Visita la nostra concessionaria Ferrari</h2>
@@ -56,14 +162,13 @@
 
     <h2>Modulo di Interesse</h2>
     <form action="/submit" method="POST">
-
         <label for="concessionaria">Nome della concessionaria visitata:</label>
         <input type="text" id="concessionaria" name="concessionaria" required>
-        <br><br>
 
-        <label for="privacy">Acconsento al trattamento dei dati:</label>
-        <input type="checkbox" id="privacy" name="privacy" required>
-        <br><br>
+        <label>
+            <input type="checkbox" id="privacy" name="privacy" required>
+            Acconsento al trattamento dei dati
+        </label>
 
         <label for="modello">Modello di interesse:</label>
         <select id="modello" name="modello" multiple required>
@@ -71,10 +176,8 @@
             <option value="Ferrari Roma">Ferrari Roma</option>
             <option value="Ferrari SF90 Stradale">Ferrari SF90 Stradale</option>
         </select>
-        <br><br>
 
         <button type="submit">Invia</button>
-
     </form>
 
 </body>
